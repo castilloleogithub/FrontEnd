@@ -1,3 +1,10 @@
+/*
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+*/
+
+
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
 import 'zone.js/testing';
@@ -13,6 +20,8 @@ declare const require: {
     keys(): string[];
   };
 };
+
+
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(

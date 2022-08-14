@@ -1,3 +1,8 @@
+<!--
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+-->
 <div class="row">
     <h1>Hard & Soft skills</h1>
     <div class="text-center col-sm-4 col-md-4 col-lg-4">
@@ -5,9 +10,10 @@
             [percent]="95"
             [radius]="90"
             [imageSrc]="'../assets/html.png'"
-            [showImage]="true"
+            [showImage]="false"
             [imageHeight]="70"
             [imageWidth]="70"
+            [title]="'Python'"
             [showUnits]="false"
             [showSubtitle]="false"
             [outerStrokeWidth]="16"
@@ -20,12 +26,12 @@
     </div>
     <div class="text-center col-sm-4 col-md-4 col-lg-4">
         <circle-progress
-            [percent]="90"
+            [percent]="50"
             [radius]="90"
-            [imageSrc]="'../assets/CSS.png'"
-            [showImage]="true"
+            [showImage]="false"
             [imageHeight]="70"
             [imageWidth]="70"
+            [title]="'HTML/CSS'"
             [showUnits]="false"
             [showSubtitle]="false"
             [outerStrokeWidth]="16"
@@ -40,8 +46,8 @@
         <circle-progress
             [percent]="80"
             [radius]="90"
-            [imageSrc]="'../assets/js.png'"
-            [showImage]="true"
+            [title]="'C/C++'"
+            [showImage]="false"
             [imageHeight]="70"
             [imageWidth]="70"
             [showUnits]="false"
@@ -56,7 +62,7 @@
     </div>
     <div class="text-center col-sm-4 col-md-4 col-lg-4">
         <circle-progress
-            [percent]="65"
+            [percent]="75"
             [radius]="90"
             [imageSrc]="'../assets/git.png'"
             [showImage]="true"
