@@ -3,3 +3,13 @@ Proyecto: Mi porfolio
 Autor: lcastillo
 © Argentina Programa 2022
 */
+.gradient-custom {
+    /* fallback for old browsers */
+    background:  #b5cba1;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+   /* background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(0, 1170, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear(to right, rgb(255, 254, 255),  #b5cba1)
+    }
