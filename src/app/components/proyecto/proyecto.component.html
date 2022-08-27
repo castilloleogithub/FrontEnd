@@ -1,19 +1,19 @@
 <div class="row">
-    <h1>Proyecto</h1>
-    <div class="col-lg-2">
+    <h1>Proyectos</h1>
+  
         <button type="button" class="btn btn-dark" routerLink="/nuevapro" *ngIf="isLogged">
             Agregar Proyecto
         </button>
-    </div>
 
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
+
         <table class="table">
             <tbody>
                 <tr *ngFor="let Proyecto of proyecto">
-                    <td><h2>{{Proyecto.nombreE}}</h2></td>
+                    <td><h4>{{Proyecto.nombreE}}</h4></td>
+                    <td>{{Proyecto.periE}}</td>
                     <td>{{Proyecto.descripcionE}}</td>
-
+                    <td><a href={{Proyecto.linkE}}></a>Link</td>
+                    
                     <td *ngIf="isLogged">
                         <button class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
@@ -25,6 +25,6 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+
 
 </div>

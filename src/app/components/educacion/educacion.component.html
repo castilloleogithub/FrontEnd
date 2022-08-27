@@ -1,20 +1,19 @@
 <div class="row">
     <h1>Educacion</h1>
-    <div class="col-lg-2">
+    
         <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
             Agregar Educacion
         </button>
-    </div>
+  
 
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
+   
         <table class="table">
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
-                    <td>
-                        <h2>{{Educacion.nombreE}}</h2>
-                    </td>
-                    <td>{{Educacion.descripcionE}}</td>
+                    <td><h4>{{Educacion.descripcionE}}</h4></td>
+                    <td>{{Educacion.periE}}</td>
+                    <td>{{Educacion.nombreE}}</td>
+                    <td><img src={{Educacion.imgE}} class="logo"></td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
@@ -26,6 +25,6 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+    
 
 </div>
