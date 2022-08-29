@@ -1,3 +1,8 @@
+/*
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+*/
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
@@ -11,6 +16,8 @@ import { EducacionService } from 'src/app/service/educacion.service';
 export class NeweducacionComponent implements OnInit {
   nombreE: string;
   descripcionE: string;
+  periE: string;
+  imgE: string;
 
   constructor(private educacionS: EducacionService, private router: Router) { }
 
@@ -18,7 +25,7 @@ export class NeweducacionComponent implements OnInit {
   }
 
   onCreate(): void{
-    const educacion = new Educacion(this.nombreE, this.descripcionE);
+    const educacion = new Educacion(this.nombreE, this.descripcionE, this.periE, this.imgE);
     this.educacionS.save(educacion).subscribe(
       data =>{
         alert("Educacion añadida correctamente");

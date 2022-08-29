@@ -1,5 +1,9 @@
+/*
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+*/
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { EducacionComponent } from './educacion.component';
 
 describe('EducacionComponent', () => {

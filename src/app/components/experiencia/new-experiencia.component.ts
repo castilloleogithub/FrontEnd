@@ -1,3 +1,8 @@
+/*
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+*/
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Experiencia } from 'src/app/model/experiencia';
@@ -11,6 +16,8 @@ import { SExperienciaService } from 'src/app/service/s-experiencia.service';
 export class NewExperienciaComponent implements OnInit {
   nombreE: string = '';
   descripcionE: string = '';
+  periE: string = '';
+  imgE: string = '';
 
   constructor(private sExperiencia: SExperienciaService, private router: Router) { }
 
@@ -18,7 +25,7 @@ export class NewExperienciaComponent implements OnInit {
   }
 
   onCreate(): void {
-    const expe = new Experiencia(this.nombreE, this.descripcionE);
+    const expe = new Experiencia(this.nombreE, this.descripcionE,this.periE, this.imgE);
     this.sExperiencia.save(expe).subscribe(
       data => {
         alert("Experiencia añadida");

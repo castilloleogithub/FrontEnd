@@ -3,35 +3,35 @@ Proyecto: Mi porfolio
 Autor: lcastillo
 © Argentina Programa 2022
 */
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.redes{
-    margin-right: 0.5em;
+.redes {
+  margin-right: 0.5em;
 }
-#logoAP{
-    width: 150px;
+#logoAP {
+  width: 150px;
 }
-img{
-    width: 50px;
+img {
+  width: 50px;
 }
-.btn{
-    border-width: medium;
+.btn {
+  border-width: medium;
 }
 
 /*--- Para la vista de celular ---*/
-@media (max-width: 575px){
-    .container{
-        flex-direction: column;
-    }
-    .redes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .redes img{
-        margin: 0.2em;
-    }
+@media (max-width: 575px) {
+  .container {
+    flex-direction: column;
+  }
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .redes img {
+    margin: 0.2em;
+  }
 }

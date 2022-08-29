@@ -1,0 +1,19 @@
+/*
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+*/
+.row{
+    padding: 20px;
+    
+}
+div{
+    background: #b5cba1;
+}
+h1, h4{
+    display: inline;
+}
+img{
+
+    width: 70px;
+}

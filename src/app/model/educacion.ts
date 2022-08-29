@@ -7,11 +7,13 @@ export class Educacion {
     id?: number;
     nombreE: string;
     descripcionE: string;
-    //imgE: string;
+    periE: string;
+    imgE: string;
 
-    constructor(nombreE: string, descripcionE: string/*,imgE: string*/){
+    constructor(nombreE: string, descripcionE: string, periE: string, imgE: string){
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
-        //this.imgE = imgE;
+        this.periE = periE;
+        this.imgE = imgE;
     }
 }

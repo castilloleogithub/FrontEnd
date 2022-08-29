@@ -1,3 +1,8 @@
+/*
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+*/
 import { Component, OnInit } from '@angular/core';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/service/educacion.service';

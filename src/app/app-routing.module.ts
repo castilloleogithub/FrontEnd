@@ -13,6 +13,8 @@ import { EditproyectoComponent } from './components/proyecto/editproyecto.compon
 import { NewproyectoComponent } from './components/proyecto/newproyecto.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,7 +24,8 @@ const routes: Routes = [
   { path: 'nuevaedu', component: NeweducacionComponent},
   { path: 'editedu/:id', component: EditeducacionComponent},
   { path: 'nuevapro', component: NewproyectoComponent},
-  { path: 'editpro/:id', component: EditproyectoComponent}
+  { path: 'editpro/:id', component: EditproyectoComponent},
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

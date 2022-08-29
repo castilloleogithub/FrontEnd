@@ -1,20 +1,22 @@
+<!--
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+-->
+
 <div class="row">
     <h1>Experiencia laboral</h1>
-    <div class="col-lg-2">
+    
         <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
             Nueva Experiencia
         </button>
-    </div>
-
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
         <table class="table">
             <tbody>
                 <tr *ngFor="let Experiencia of expe">
-                    <td>
-                        <h2>{{Experiencia.nombreE}}</h2>
-                    </td>
+                    <td><h4>{{Experiencia.nombreE}}</h4></td>
+                    <td>{{Experiencia.periE}}</td>
                     <td>{{Experiencia.descripcionE}}</td>
+                    <td><img src={{Experiencia.imgE}} class="logo"></td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
@@ -28,4 +30,3 @@
         </table>
     </div>
 
-</div>

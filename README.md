@@ -1,7 +1,16 @@
+## Proyecto: Mi porfolio
+## Autor: lcastillo
+### © Argentina Programa 2022
 
-# Proyecto: Mi porfolio
-# Autor: lcastillo
-# © Argentina Programa 2022
+En Master encontraras el FrontEnd  de My porfolio, proyecto elaborado en la capacitacion de desarrollador Full Stack Jr.
+
+Existe una rama donde se encuentra el mismo codigo para que lo puedas lansar de modo localhost.
+
+para loguiarte y probar debes hacerlo con USER: root   Pass: toor
+
+Ademas, te invito a equivocarte y observar mi pagina 404
+
+En caso de bajarle  lo del branch a continuacion te indico como desplegarlo:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
@@ -17,14 +26,4 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Por mas consulta @castillo.leo

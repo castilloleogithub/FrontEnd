@@ -1,3 +1,8 @@
+/*
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+*/
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Proyecto } from 'src/app/model/proyecto';
@@ -11,6 +16,9 @@ import { ProyectoService } from 'src/app/service/proyecto.service';
 export class NewproyectoComponent implements OnInit {
   nombreE: string;
   descripcionE: string;
+  periE: string;
+  imgE: string;
+  linkE: string;
 
   constructor(private proyectoS: ProyectoService, private router: Router) { }
 
@@ -18,7 +26,7 @@ export class NewproyectoComponent implements OnInit {
   }
 
   onCreate(): void{
-    const proyecto = new Proyecto(this.nombreE, this.descripcionE);
+    const proyecto = new Proyecto(this.nombreE, this.descripcionE,this.periE, this.imgE,this.linkE);
     this.proyectoS.save(proyecto).subscribe(
       data =>{
         alert("Proyecto añadida correctamente");

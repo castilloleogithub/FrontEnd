@@ -1,3 +1,8 @@
+<!--
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+-->
 <div class="container" *ngIf="proyecto">
     <div class="row">
         <div>
@@ -9,6 +14,18 @@
                 <div class="form-group">
                     <label for="descripcionE">Descripcion del proyecto</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="proyecto.descripcionE" required>
+                </div>
+                <div class="form-group">
+                    <label for="periE">Periodo trabajado</label>
+                    <input type="text" class="form-control" id="periE" name="periE" [(ngModel)]="proyecto.periE" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgE">URL Imagen</label>
+                    <input type="text" class="form-control" id="imgE" name="imgE" [(ngModel)]="proyecto.imgE" required>
+                </div>
+                <div class="form-group">
+                    <label for="linkE">Link del proyecto</label>
+                    <input type="text" class="form-control" id="linkE" name="linkE" [(ngModel)]="proyecto.linkE" required>
                 </div>
                 <button class="btn btn-primary">
                     Editar proyecto
