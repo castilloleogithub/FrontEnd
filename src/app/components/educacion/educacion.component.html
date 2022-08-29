@@ -1,43 +1,30 @@
-<!--
-Proyecto: Mi porfolio
-Autor: lcastillo
-© Argentina Programa 2022
--->
-
 <div class="row">
-  <h1>Educación</h1>
-  <button
-    type="button"
-    class="btn btn-dark"
-    routerLink="/nuevaedu"
-    *ngIf="isLogged"
-  >
-    Agregar Educación
-  </button>
+    <h1>Educacion</h1>
+    
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
+  
 
-  <table class="table">
-    <tbody>
-      <tr *ngFor="let Educacion of educacion">
-        <td>
-          <h4>{{ Educacion.descripcionE }}</h4>
-        </td>
-        <td>{{ Educacion.periE }}</td>
-        <td>{{ Educacion.nombreE }}</td>
-        <td><img src="{{ Educacion.imgE }}" class="logo" /></td>
-        <td *ngIf="isLogged">
-          <button
-            class="btn btn-light"
-            routerLink="/editedu/{{ Educacion.id }}"
-          >
-            <i class="bi bi-pencil-fill"></i> EDITAR
-          </button>
-        </td>
-        <td *ngIf="isLogged">
-          <button class="btn btn-danger" (click)="delete(Educacion.id)">
-            <i class="bi bi-trash-fill"></i> BORRAR
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+   
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td><h4>{{Educacion.descripcionE}}</h4></td>
+                    <td>{{Educacion.periE}}</td>
+                    <td>{{Educacion.nombreE}}</td>
+                    <td><img src={{Educacion.imgE}} class="logo"></td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    
+
 </div>

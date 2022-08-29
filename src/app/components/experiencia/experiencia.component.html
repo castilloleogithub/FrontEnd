@@ -1,15 +1,12 @@
-<!--
-Proyecto: Mi porfolio
-Autor: lcastillo
-© Argentina Programa 2022
--->
-
 <div class="row">
     <h1>Experiencia laboral</h1>
     
         <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
             Nueva Experiencia
         </button>
+
+
+
         <table class="table">
             <tbody>
                 <tr *ngFor="let Experiencia of expe">
@@ -28,5 +25,6 @@ Autor: lcastillo
                 </tr>
             </tbody>
         </table>
-    </div>
 
+
+</div>
