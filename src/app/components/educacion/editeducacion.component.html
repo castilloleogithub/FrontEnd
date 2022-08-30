@@ -1,7 +1,11 @@
-
-
+<!--
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+-->
+<div class="container" *ngIf="educacion">
     <div class="row">
-        
+        <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreE">Nombre de la institucion</label>
@@ -24,6 +28,6 @@
                     Editar educacion
                 </button>
             </form>
-        
+        </div>
     </div>
-
+</div>

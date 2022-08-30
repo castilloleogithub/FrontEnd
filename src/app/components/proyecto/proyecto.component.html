@@ -1,30 +1,41 @@
+<!--
+Proyecto: Mi porfolio
+Autor: lcastillo
+© Argentina Programa 2022
+-->
+
 <div class="row">
-    <h1>Proyectos</h1>
-  
-        <button type="button" class="btn btn-dark" routerLink="/nuevapro" *ngIf="isLogged">
-            Agregar Proyecto
-        </button>
+  <h1>Proyectos</h1>
+  <button
+    type="button"
+    class="btn btn-dark"
+    routerLink="/nuevapro"
+    *ngIf="isLogged"
+  >
+    Agregar Proyecto
+  </button>
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let Proyecto of proyecto">
+        <td>
+          <h4>{{ Proyecto.nombreE }}</h4>
+        </td>
+        <td>{{ Proyecto.periE }}</td>
+        <td>{{ Proyecto.descripcionE }}</td>
+        <td><a href="{{ Proyecto.linkE }}">Link</a></td>
+        <td><img src="{{ Proyecto.imgE }}" class="logo" /></td>
 
-
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Proyecto of proyecto">
-                    <td><h4>{{Proyecto.nombreE}}</h4></td>
-                    <td>{{Proyecto.periE}}</td>
-                    <td>{{Proyecto.descripcionE}}</td>
-                    <td><a href={{Proyecto.linkE}}></a>Link</td>
-                    
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}">
-                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
-                            <i class="bi bi-trash-fill"></i> BORRAR</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-
+        <td *ngIf="isLogged">
+          <button class="btn btn-light" routerLink="/editpro/{{ Proyecto.id }}" >
+            <i class="bi bi-pencil-fill"></i> 
+          </button>
+        </td>
+        <td *ngIf="isLogged">
+          <button class="btn btn-danger" (click)="delete(Proyecto.id)" >
+            <i class="bi bi-trash-fill"></i> 
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

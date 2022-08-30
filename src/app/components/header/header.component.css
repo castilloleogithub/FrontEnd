@@ -11,3 +11,6 @@ app-social{
     float: right;
     margin-top: 25px;
 }
+body{
+    overflow-x: hidden;
+ }

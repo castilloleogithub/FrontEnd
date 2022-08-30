@@ -7,3 +7,6 @@ Autor: lcastillo
     background-color: #b5cba1;
     padding: 20px;
 }
+body{
+    overflow-x: hidden;
+ }

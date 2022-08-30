@@ -20,7 +20,9 @@ img {
 .btn {
   border-width: medium;
 }
-
+body{
+  overflow-x: hidden;
+}
 /*--- Para la vista de celular ---*/
 @media (max-width: 575px) {
   .container {

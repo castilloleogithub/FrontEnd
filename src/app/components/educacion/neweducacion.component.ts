@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/service/educacion.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-neweducacion',
@@ -18,10 +19,22 @@ export class NeweducacionComponent implements OnInit {
   descripcionE: string;
   periE: string;
   imgE: string;
-
-  constructor(private educacionS: EducacionService, private router: Router) { }
-
+  educacion: Educacion[] =[];
+  constructor(private educacionS: EducacionService, private router: Router, private tokenService: TokenService) { }
+  
+  isLogged =false;
   ngOnInit(): void {
+  this.cargarEducacion();
+    if ( this.tokenService.getToken())
+      {
+        this.isLogged = true;
+      } else {
+        this.isLogged = false;
+      }
+  }
+  cargarEducacion(): void{
+    this.educacionS.lista().subscribe((data)=>{this.educacion = data;
+    });
   }
 
   onCreate(): void{

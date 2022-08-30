@@ -1,3 +1,4 @@
+
 ## Proyecto: Mi porfolio
 ## Autor: lcastillo
 ### © Argentina Programa 2022
@@ -8,7 +9,7 @@ Existe una rama donde se encuentra el mismo codigo para que lo puedas lanzar de 
 
 para loguiarte y probar debes hacerlo con USER: root   Pass: toor
 
-Ademas, te invito a equivocarte y observar mi pagina 404
+Ademas te invitamos a equivocarte y observar mi pagina 404
 
 En caso de bajarle  lo del branch a continuacion te indico como desplegarlo:
 

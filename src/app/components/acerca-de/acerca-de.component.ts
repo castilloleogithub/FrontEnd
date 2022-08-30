@@ -16,7 +16,8 @@ export class AcercaDeComponent implements OnInit {
   persona: persona = new persona('', '', '','');
 
   constructor(public personaService: PersonaService) {}
-
+  isLogged = true;
+  
   ngOnInit(): void {
     this.personaService.getPersona().subscribe((data) => {
       this.persona = data;
